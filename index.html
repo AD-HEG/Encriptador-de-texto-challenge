@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encritador de textos</title>
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Enlaza Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+</head>
+<body>
+    <header>
+        <img class="logo" src="assets/Logo.png" alt="logo">
+    </header>
+    <main>
+        <!--text area-->
+        <div class="contenido">
+            <div class="contenido__entrada">
+                <textarea name="textoEntrada" id="textoEntrada" placeholder="Ingresa el texto aquí" cols="50" rows="10"></textarea>
+                <!--botones y parte baja--> 
+                <div class="botones">
+                    <p class="terminos"><i class="material-icons">error</i>Solo letras minúsculas y sin acentos</p>
+                    
+                    <button onclick="encriptar()" class="boton__encriptar">Encriptar</button>
+                    <button onclick="desencriptar()" class="boton__desencriptar">Desencriptar</button>
+                </div> 
+            </div>                  
+             
+         <!--resultados-->
+            <div id="resultado">
+                <img class="muneco" src="assets/Muñeco.png" alt="muñeco">                     
+                <h2>Ningún mensaje fue encontrado</h2>                
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+        </div>  
+    </main>
+
+    <footer>
+        <p class="footer">Creado por: Andres Hernandez - 2024</p>
+    </footer>     
+    <script src="encriptador.js"></script>
+</body>
+</html>
